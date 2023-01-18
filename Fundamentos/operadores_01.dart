@@ -17,7 +17,9 @@ void main(List<String> args) {
   bool produtoFragil = true;
   bool produtoCaro = false;
 
-  print(produtoCaro || produtoFragil); // OU
-  print(produtoCaro && produtoFragil); // E
-  print(produtoCaro ^ produtoFragil); // OU EXCLUSIVO
+  print(produtoCaro || produtoFragil); // OR -> OU
+  print(produtoCaro && produtoFragil); // AND -> E
+  print(produtoCaro ^ produtoFragil); // XOR -> OU EXCLUSIVO
+  print(!produtoFragil); // NOT -> UNÁRIO/PREFIXADO
+  print(!!produtoFragil); // NEGAÇÃO DA NEGAÇÃO
 }
